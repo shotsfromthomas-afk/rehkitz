@@ -220,6 +220,10 @@ footer {
     box-shadow: 0 18px 28px rgba(0, 0, 0, 0.2);
 }
 
+.hidden {
+    display: none;
+}
+
 @media (max-width: 900px) {
     .grid {
         grid-template-columns: 1fr;
