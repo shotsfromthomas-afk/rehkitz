@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ba1a1a",
+              "outline": "#74796f",
+              "secondary-fixed": "#ffdcbd",
+              "inverse-surface": "#30312c",
+              "surface-bright": "#fbf9f2",
+              "tertiary": "#703823",
+              "on-tertiary-fixed-variant": "#6f3722",
+              "on-primary-fixed": "#0c2008",
+              "on-surface": "#1b1c18",
+              "surface-tint": "#4e6546",
+              "on-tertiary-fixed": "#380d00",
+              "primary-container": "#4f6647",
+              "tertiary-fixed-dim": "#ffb59b",
+              "secondary-fixed-dim": "#eebd8e",
+              "on-secondary-fixed": "#2c1600",
+              "secondary-container": "#fdcb9b",
+              "primary": "#384e31",
+              "surface-variant": "#e4e2dc",
+              "surface-dim": "#dcdad3",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed-variant": "#364c30",
+              "inverse-primary": "#b4cea8",
+              "surface-container-highest": "#e4e2dc",
+              "surface": "#fbf9f2",
+              "on-tertiary-container": "#ffd0c0",
+              "on-surface-variant": "#434840",
+              "surface-container-low": "#f6f4ec",
+              "primary-fixed-dim": "#b4cea8",
+              "surface-container": "#f0eee7",
+              "on-error": "#ffffff",
+              "on-secondary-container": "#79542d",
+              "outline-variant": "#c4c8bd",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "error-container": "#ffdad6",
+              "inverse-on-surface": "#f3f1ea",
+              "primary-fixed": "#d0eac3",
+              "on-primary-container": "#c8e3bc",
+              "surface-container-lowest": "#ffffff",
+              "on-background": "#1b1c18",
+              "on-secondary-fixed-variant": "#61401b",
+              "on-error-container": "#93000a",
+              "tertiary-container": "#8d4f38",
+              "secondary": "#7c5730",
+              "tertiary-fixed": "#ffdbcf",
+              "background": "#fbf9f2",
+              "surface-container-high": "#eae8e1"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(251, 249, 242, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f2]/70 dark:bg-[#1b1c18]/70 backdrop-blur-md">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<div class="text-2xl font-['Noto_Serif'] italic text-[#384e31] dark:text-[#fbf9f2]">
+            Fawn Rescue
+        </div>
+<div class="hidden md:flex items-center space-x-8 font-['Noto_Serif'] font-semibold tracking-tight">
+<a class="text-[#384e31]/70 dark:text-[#fbf9f2]/70 hover:text-[#384e31] dark:hover:text-[#fbf9f2] transition-colors" href="#">Mission</a>
+<a class="text-[#384e31]/70 dark:text-[#fbf9f2]/70 hover:text-[#384e31] dark:hover:text-[#fbf9f2] transition-colors" href="#">Team</a>
+<a class="text-[#384e31]/70 dark:text-[#fbf9f2]/70 hover:text-[#384e31] dark:hover:text-[#fbf9f2] transition-colors" href="#">Sponsoren</a>
+<a class="text-[#384e31]/70 dark:text-[#fbf9f2]/70 hover:text-[#384e31] dark:hover:text-[#fbf9f2] transition-colors" href="#">Mitgliedschaft</a>
+<a class="text-[#384e31]/70 dark:text-[#fbf9f2]/70 hover:text-[#384e31] dark:hover:text-[#fbf9f2] transition-colors" href="#">Konzept</a>
+<a class="text-[#384e31] dark:text-[#fbf9f2] border-b-2 border-[#384e31] dark:border-[#fbf9f2] pb-1" href="#">Für Landwirte</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label font-bold text-sm hover:bg-primary-container transition-all scale-95 duration-200 ease-in-out">
+            Donate
+        </button>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 pt-20 pb-12">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<span class="font-label text-xs tracking-widest uppercase text-secondary font-bold mb-4 block">Zusammenarbeit</span>
+<h1 class="font-headline text-5xl md:text-6xl font-bold tracking-tight text-primary leading-tight mb-6">
+                    Flächen zum <br/><span class="italic font-normal">Mähen</span> anmelden
+                </h1>
+<p class="text-lg text-on-surface-variant max-w-md leading-relaxed">
+                    Schützen Sie das Leben auf Ihren Feldern. Gemeinsam koordinieren wir die Suche vor dem Mähen – schnell, unkompliziert und kostenlos.
+                </p>
+</div>
+<div class="relative h-[400px] rounded-xl overflow-hidden shadow-2xl">
+<img alt="Scenic green field during sunrise" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtlKXDhFdYXzSonp5ngODehasH1_91k5b-2nKlEWVZPrzt3-vGkeMtFi3DjQehpEJyCmachvtXZa90ZYUOdSXYBL64vEwp-x72OpRdvECvIrL2KrU4APk5xJAKnlp2eaGDUiBD7QEqLjIBrqgC3LWycbOi3fRRpCoq3VYCH94Z-zbhnqegzqQx1X0-DK9IEMH2bpA0NzE6lOoj_B5_HQLYD_lLWqu8ZKiqwBn-KOVaZWzBUeIHXeDSpHbBokr2vQxT0e7tofTEWY8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Registration Form Section -->
+<section class="bg-surface-container-low py-20 px-8">
+<div class="max-w-4xl mx-auto">
+<div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-sm border border-outline-variant/10">
+<!-- Progress Indicator -->
+<div class="flex justify-between items-center mb-16 px-4">
+<div class="flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">1</div>
+<span class="text-xs font-label font-bold text-primary">Kontakt</span>
+</div>
+<div class="flex-1 h-0.5 bg-surface-variant mx-4"></div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold">2</div>
+<span class="text-xs font-label text-on-surface-variant">Lage</span>
+</div>
+<div class="flex-1 h-0.5 bg-surface-variant mx-4"></div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold">3</div>
+<span class="text-xs font-label text-on-surface-variant">Termin</span>
+</div>
+</div>
+<form class="space-y-12">
+<!-- Step 1: Contact -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="col-span-full border-b border-outline-variant/30 pb-4">
+<h3 class="font-headline text-2xl font-bold text-primary mb-2">Kontaktdaten &amp; Betrieb</h3>
+<p class="text-on-surface-variant text-sm">Bitte geben Sie Ihre Daten an, damit wir Sie für die Abstimmung erreichen können.</p>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-sm font-semibold text-on-surface-variant">Name / Betrieb</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. Bio-Hof Müller" type="text"/>
+</div>
+<div class="flex flex-col gap-2 bg-primary/5 p-4 rounded-lg border border-primary/10">
+<label class="font-label text-sm font-bold text-primary">Telefonnummer (für Rückruf)</label>
+<input class="bg-transparent border-none border-b-2 border-primary/30 focus:border-primary focus:ring-0 transition-colors py-3 px-0 text-lg font-semibold" placeholder="+49 123 456789" type="tel"/>
+</div>
+<div class="flex flex-col gap-2 col-span-full">
+<label class="font-label text-sm font-semibold text-on-surface-variant">E-Mail Adresse</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="beispiel@hof.de" type="email"/>
+</div>
+</div>
+<!-- Step 2: Location -->
+<div class="grid grid-cols-1 gap-8 pt-8">
+<div class="border-b border-outline-variant/30 pb-4">
+<h3 class="font-headline text-2xl font-bold text-primary mb-2">Lage der Fläche</h3>
+<p class="text-on-surface-variant text-sm">Wo befindet sich die zu mähende Fläche?</p>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-sm font-semibold text-on-surface-variant">Ort des Mähens (Adresse oder Schlagbezeichnung)</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. Gemarkung Sonnental, Schlag 4" type="text"/>
+</div>
+</div>
+<!-- Step 3: Scheduling -->
+<div class="grid grid-cols-1 gap-8 pt-8">
+<div class="border-b border-outline-variant/30 pb-4">
+<h3 class="font-headline text-2xl font-bold text-primary mb-2">Zeitplanung</h3>
+<p class="text-on-surface-variant text-sm">Wann planen Sie zu mähen? Idealerweise suchen wir am Morgen des Mäh-Tages.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="flex flex-col gap-2">
+<label class="font-label text-sm font-semibold text-on-surface-variant">Geplantes Mähdatum</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" type="date"/>
+</div>
+<div class="bg-primary-container/10 p-4 rounded-xl flex items-start gap-3 border border-primary/10">
+<span class="material-symbols-outlined text-primary mt-1">light_mode</span>
+<p class="text-sm text-primary leading-snug">
+<strong>Hinweis:</strong> Die Suche findet idealerweise früh morgens vor dem Mähen statt, wenn der Kontrast für die Drohnen am besten ist.
+                                </p>
+</div>
+</div>
+<div class="space-y-4">
+<label class="font-label text-sm font-semibold text-on-surface-variant">Empfohlene Startzeiten für Ihr Datum</label>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<button class="border-2 border-primary bg-primary text-on-primary py-3 rounded-xl font-bold transition-all shadow-md" type="button">05:30 Uhr</button>
+<button class="border-2 border-outline-variant text-on-surface-variant py-3 rounded-xl font-bold hover:border-primary hover:text-primary transition-all" type="button">06:00 Uhr</button>
+<button class="border-2 border-outline-variant text-on-surface-variant py-3 rounded-xl font-bold hover:border-primary hover:text-primary transition-all" type="button">06:30 Uhr</button>
+<div class="flex items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined" data-weight="fill">cloud_queue</span>
+<span class="text-xs font-bold">Klar &amp; Windstill</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 4: Finalize -->
+<div class="grid grid-cols-1 gap-8 pt-8">
+<div>
+<h3 class="font-headline text-2xl font-bold text-primary mb-2">Abschluss</h3>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label text-sm font-semibold text-on-surface-variant">Flächengröße (optional in ha)</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. 4.5" type="number"/>
+</div>
+<div class="pt-8">
+<button class="w-full bg-primary text-on-primary py-5 rounded-full font-headline text-xl font-bold shadow-xl hover:bg-primary-container transition-all flex items-center justify-center gap-3">
+                                Anfrage senden
+                                <span class="material-symbols-outlined">send</span>
+</button>
+<div class="flex items-center justify-center gap-2 mt-6 text-on-surface-variant/60">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span class="text-xs">Ihre Daten werden vertraulich behandelt und nur zur Koordination genutzt.</span>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- How it Works Section -->
+<section class="py-24 max-w-7xl mx-auto px-8">
+<h2 class="font-headline text-4xl font-bold text-center text-primary mb-20 italic">So funktioniert der Schutz</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="text-center group">
+<div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary">edit_document</span>
+</div>
+<h4 class="font-headline text-lg font-bold mb-3">1. Online Anmelden</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Sie melden uns Ihre Flächen mindestens 24h vor dem geplanten Mähtermin.</p>
+</div>
+<div class="text-center group">
+<div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary">phone_in_talk</span>
+</div>
+<h4 class="font-headline text-lg font-bold mb-3">2. Bestätigung</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Nach Ihrer Anmeldung erfolgt ein telefonischer Rückruf, um alle Details und den Termin final zu bestätigen.</p>
+</div>
+<div class="text-center group">
+<div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary">precision_manufacturing</span>
+</div>
+<h4 class="font-headline text-lg font-bold mb-3">3. Drohnensuche</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Unser Team überfliegt am frühen Morgen die Wiese mit einer Wärmebildkamera.</p>
+</div>
+<div class="text-center group">
+<div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-fixed transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary">grass</span>
+</div>
+<h4 class="font-headline text-lg font-bold mb-3">4. Sicheres Mähen</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Kitze werden sicher gesichert, Sie können ohne Sorge mit dem Mähen beginnen.</p>
+</div>
+</div>
+</section>
+<!-- Trust / CTA -->
+<section class="max-w-7xl mx-auto px-8 pb-24">
+<div class="bg-secondary-container/30 rounded-2xl p-10 flex flex-col md:flex-row items-center justify-between gap-8 border border-secondary/10">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-on-secondary rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-secondary text-3xl" data-weight="fill">verified</span>
+</div>
+<div>
+<h4 class="font-headline text-xl font-bold text-on-secondary-container">Kostenloser Service</h4>
+<p class="text-on-secondary-container/80">Die Kitzrettung ist für Sie als Landwirt vollkommen kostenfrei.</p>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<p class="font-label text-sm font-bold text-secondary mb-1">Fragen zum Ablauf?</p>
+<a class="text-2xl font-headline font-bold text-primary hover:text-secondary transition-colors underline decoration-dotted" href="tel:+49123456789">0123 / 456 789 0</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full rounded-t-[1.5rem] mt-20 bg-[#f0eee7] dark:bg-[#1b1c18]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-8 py-12">
+<div>
+<div class="text-lg font-['Noto_Serif'] font-bold text-[#384e31] dark:text-[#fbf9f2] mb-4">
+                Fawn Rescue Association
+            </div>
+<p class="font-['Manrope'] text-sm tracking-wide text-[#384e31]/60 dark:text-[#fbf9f2]/60 max-w-xs leading-relaxed">
+                Gemeinsam schützen wir das schwächste Glied unserer Natur. Wir danken allen Landwirten für ihre tatkräftige Unterstützung.
+            </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<a class="font-['Manrope'] text-sm tracking-wide text-[#384e31]/60 dark:text-[#fbf9f2]/60 hover:text-[#384e31] dark:hover:text-[#fbf9f2] underline decoration-dotted transition-opacity opacity-80 hover:opacity-100" href="#">Impressum</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-[#384e31]/60 dark:text-[#fbf9f2]/60 hover:text-[#384e31] dark:hover:text-[#fbf9f2] underline decoration-dotted transition-opacity opacity-80 hover:opacity-100" href="#">Datenschutz</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-['Manrope'] text-sm tracking-wide text-[#384e31]/60 dark:text-[#fbf9f2]/60 hover:text-[#384e31] dark:hover:text-[#fbf9f2] underline decoration-dotted transition-opacity opacity-80 hover:opacity-100" href="#">Kontakt</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-[#384e31]/60 dark:text-[#fbf9f2]/60 hover:text-[#384e31] dark:hover:text-[#fbf9f2] underline decoration-dotted transition-opacity opacity-80 hover:opacity-100" href="#">Presse</a>
+</div>
+</div>
+<div class="col-span-full pt-8 border-t border-outline-variant/30">
+<p class="font-['Manrope'] text-sm tracking-wide text-[#384e31]/60 dark:text-[#fbf9f2]/60">
+                © 2024 Fawn Rescue Association. Protecting the Digital Sanctuary.
+            </p>
+</div>
+</div>
+</footer>
+</body></html>
