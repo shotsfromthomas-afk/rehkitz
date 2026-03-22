@@ -151,22 +151,7 @@
 <div class="max-w-4xl mx-auto">
 <div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-sm border border-outline-variant/10">
 <!-- Progress Indicator -->
-<div class="flex justify-between items-center mb-16 px-4">
-<div class="flex flex-col items-center gap-2">
-<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">1</div>
-<span class="text-xs font-label font-bold text-primary">Kontakt</span>
-</div>
-<div class="flex-1 h-0.5 bg-surface-variant mx-4"></div>
-<div class="flex flex-col items-center gap-2">
-<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold">2</div>
-<span class="text-xs font-label text-on-surface-variant">Lage</span>
-</div>
-<div class="flex-1 h-0.5 bg-surface-variant mx-4"></div>
-<div class="flex flex-col items-center gap-2">
-<div class="w-10 h-10 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-bold">3</div>
-<span class="text-xs font-label text-on-surface-variant">Termin</span>
-</div>
-</div>
+
 <form class="space-y-12">
 <!-- Step 1: Contact -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -202,7 +187,7 @@
 <div class="grid grid-cols-1 gap-8 pt-8">
 <div class="border-b border-outline-variant/30 pb-4">
 <h3 class="font-headline text-2xl font-bold text-primary mb-2">Zeitplanung</h3>
-<p class="text-on-surface-variant text-sm">Wann planen Sie zu mähen? Idealerweise suchen wir am Morgen des Mäh-Tages.</p>
+<p class="text-on-surface-variant text-sm">Wann planen Sie zu mähen? Der Überflug mit der Drohne sollte möglichst früh am Mäh-Tag stattfinden, das Mähen kann aber auch später erfolgen.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div class="flex flex-col gap-2">
@@ -212,21 +197,13 @@
 <div class="bg-primary-container/10 p-4 rounded-xl flex items-start gap-3 border border-primary/10">
 <span class="material-symbols-outlined text-primary mt-1">light_mode</span>
 <p class="text-sm text-primary leading-snug">
-<strong>Hinweis:</strong> Die Suche findet idealerweise früh morgens vor dem Mähen statt, wenn der Kontrast für die Drohnen am besten ist.
+<strong>Hinweis:</strong> Bitte wählen Sie die gewünschte Uhrzeit für den Drohnenflug am Mäh-Tag. Das Mähen kann im Anschluss flexibel erfolgen.
                                 </p>
 </div>
 </div>
 <div class="space-y-4">
-<label class="font-label text-sm font-semibold text-on-surface-variant">Empfohlene Startzeiten für Ihr Datum</label>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-<button class="border-2 border-primary bg-primary text-on-primary py-3 rounded-xl font-bold transition-all shadow-md" type="button">05:30 Uhr</button>
-<button class="border-2 border-outline-variant text-on-surface-variant py-3 rounded-xl font-bold hover:border-primary hover:text-primary transition-all" type="button">06:00 Uhr</button>
-<button class="border-2 border-outline-variant text-on-surface-variant py-3 rounded-xl font-bold hover:border-primary hover:text-primary transition-all" type="button">06:30 Uhr</button>
-<div class="flex items-center justify-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined" data-weight="fill">cloud_queue</span>
-<span class="text-xs font-bold">Klar &amp; Windstill</span>
-</div>
-</div>
+<label class="font-label text-sm font-semibold text-on-surface-variant">Uhrzeit für Drohnenflug</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" type="time" required />
 </div>
 </div>
 <!-- Step 4: Finalize -->
