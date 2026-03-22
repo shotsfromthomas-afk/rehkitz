@@ -152,7 +152,8 @@
 <div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-sm border border-outline-variant/10">
 <!-- Progress Indicator -->
 
-<form class="space-y-12">
+<form name="contact" netlify class="space-y-12">
+  <input type="hidden" name="form-name" value="contact" />
 <!-- Step 1: Contact -->
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div class="col-span-full border-b border-outline-variant/30 pb-4">
@@ -161,15 +162,15 @@
 </div>
 <div class="flex flex-col gap-2">
 <label class="font-label text-sm font-semibold text-on-surface-variant">Name / Betrieb</label>
-<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. Bio-Hof Müller" type="text"/>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. Bio-Hof Müller" type="text" name="betrieb" required />
 </div>
 <div class="flex flex-col gap-2 bg-primary/5 p-4 rounded-lg border border-primary/10">
 <label class="font-label text-sm font-bold text-primary">Telefonnummer (für Rückruf)</label>
-<input class="bg-transparent border-none border-b-2 border-primary/30 focus:border-primary focus:ring-0 transition-colors py-3 px-0 text-lg font-semibold" placeholder="+49 123 456789" type="tel"/>
+<input class="bg-transparent border-none border-b-2 border-primary/30 focus:border-primary focus:ring-0 transition-colors py-3 px-0 text-lg font-semibold" placeholder="+49 123 456789" type="tel" name="telefon" required />
 </div>
 <div class="flex flex-col gap-2 col-span-full">
 <label class="font-label text-sm font-semibold text-on-surface-variant">E-Mail Adresse</label>
-<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="beispiel@hof.de" type="email"/>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="beispiel@hof.de" type="email" name="email" required />
 </div>
 </div>
 <!-- Step 2: Location -->
@@ -180,7 +181,7 @@
 </div>
 <div class="flex flex-col gap-2">
 <label class="font-label text-sm font-semibold text-on-surface-variant">Ort des Mähens (Adresse oder Schlagbezeichnung)</label>
-<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. Gemarkung Sonnental, Schlag 4" type="text"/>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. Gemarkung Sonnental, Schlag 4" type="text" name="ort" required />
 </div>
 </div>
 <!-- Step 3: Scheduling -->
@@ -192,7 +193,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 <div class="flex flex-col gap-2">
 <label class="font-label text-sm font-semibold text-on-surface-variant">Geplantes Mähdatum</label>
-<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" type="date"/>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" type="date" name="maehdatum" required />
 </div>
 <div class="bg-primary-container/10 p-4 rounded-xl flex items-start gap-3 border border-primary/10">
 <span class="material-symbols-outlined text-primary mt-1">light_mode</span>
@@ -204,7 +205,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
   <div class="flex flex-col gap-2">
     <label class="font-label text-sm font-semibold text-on-surface-variant">Geplante Uhrzeit für das Mähen</label>
-    <input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" type="time" required />
+    <input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" type="time" name="maehzeit" required />
   </div>
 </div>
 </div>
@@ -215,7 +216,7 @@
 </div>
 <div class="flex flex-col gap-2">
 <label class="font-label text-sm font-semibold text-on-surface-variant">Flächengröße (optional in ha)</label>
-<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. 4.5" type="number"/>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. 4.5" type="number" name="flaeche" step="0.1" />
 </div>
 <div class="pt-8">
 <button class="w-full bg-primary text-on-primary py-5 rounded-full font-headline text-xl font-bold shadow-xl hover:bg-primary-container transition-all flex items-center justify-center gap-3">
