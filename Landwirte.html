@@ -82,22 +82,15 @@
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#fbf9f2]/70 dark:bg-[#1b1c18]/70 backdrop-blur-md">
-<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
-<div class="text-2xl font-['Noto_Serif'] italic text-[#384e31] dark:text-[#fbf9f2]">
-            Fawn Rescue
-        </div>
-<div class="hidden md:flex items-center space-x-8 font-['Noto_Serif'] font-semibold tracking-tight">
-<a class="text-[#384e31]/70 dark:text-[#fbf9f2]/70 hover:text-[#384e31] dark:hover:text-[#fbf9f2] transition-colors" href="#">Mission</a>
-<a class="text-[#384e31]/70 dark:text-[#fbf9f2]/70 hover:text-[#384e31] dark:hover:text-[#fbf9f2] transition-colors" href="#">Team</a>
-<a class="text-[#384e31]/70 dark:text-[#fbf9f2]/70 hover:text-[#384e31] dark:hover:text-[#fbf9f2] transition-colors" href="#">Sponsoren</a>
-<a class="text-[#384e31]/70 dark:text-[#fbf9f2]/70 hover:text-[#384e31] dark:hover:text-[#fbf9f2] transition-colors" href="#">Mitgliedschaft</a>
-<a class="text-[#384e31]/70 dark:text-[#fbf9f2]/70 hover:text-[#384e31] dark:hover:text-[#fbf9f2] transition-colors" href="#">Konzept</a>
-<a class="text-[#384e31] dark:text-[#fbf9f2] border-b-2 border-[#384e31] dark:border-[#fbf9f2] pb-1" href="#">Für Landwirte</a>
+<nav class="fixed top-0 w-full z-50 bg-stone-50/70 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="font-serif italic text-2xl text-emerald-900">Rehkitzrettung</div>
+<div class="hidden md:flex items-center space-x-8">
+  <a class="text-on-surface hover:text-primary transition-all font-medium" href="Landwirte.html">Landwirte</a>
 </div>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label font-bold text-sm hover:bg-primary-container transition-all scale-95 duration-200 ease-in-out">
-            Donate
-        </button>
+<button class="bg-primary text-on-primary px-8 py-2.5 rounded-full font-bold tracking-tight hover:bg-primary-container transition-all active:scale-95">
+                Donate
+            </button>
 </div>
 </nav>
 <main class="pt-24">
@@ -280,31 +273,15 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full rounded-t-[1.5rem] mt-20 bg-[#f0eee7] dark:bg-[#1b1c18]">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-8 py-12">
-<div>
-<div class="text-lg font-['Noto_Serif'] font-bold text-[#384e31] dark:text-[#fbf9f2] mb-4">
-                Fawn Rescue Association
-            </div>
-<p class="font-['Manrope'] text-sm tracking-wide text-[#384e31]/60 dark:text-[#fbf9f2]/60 max-w-xs leading-relaxed">
-                Gemeinsam schützen wir das schwächste Glied unserer Natur. Wir danken allen Landwirten für ihre tatkräftige Unterstützung.
-            </p>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div class="flex flex-col gap-2">
-<a class="font-['Manrope'] text-sm tracking-wide text-[#384e31]/60 dark:text-[#fbf9f2]/60 hover:text-[#384e31] dark:hover:text-[#fbf9f2] underline decoration-dotted transition-opacity opacity-80 hover:opacity-100" href="#">Impressum</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-[#384e31]/60 dark:text-[#fbf9f2]/60 hover:text-[#384e31] dark:hover:text-[#fbf9f2] underline decoration-dotted transition-opacity opacity-80 hover:opacity-100" href="#">Datenschutz</a>
-</div>
-<div class="flex flex-col gap-2">
-<a class="font-['Manrope'] text-sm tracking-wide text-[#384e31]/60 dark:text-[#fbf9f2]/60 hover:text-[#384e31] dark:hover:text-[#fbf9f2] underline decoration-dotted transition-opacity opacity-80 hover:opacity-100" href="#">Kontakt</a>
-<a class="font-['Manrope'] text-sm tracking-wide text-[#384e31]/60 dark:text-[#fbf9f2]/60 hover:text-[#384e31] dark:hover:text-[#fbf9f2] underline decoration-dotted transition-opacity opacity-80 hover:opacity-100" href="#">Presse</a>
-</div>
-</div>
-<div class="col-span-full pt-8 border-t border-outline-variant/30">
-<p class="font-['Manrope'] text-sm tracking-wide text-[#384e31]/60 dark:text-[#fbf9f2]/60">
-                © 2024 Fawn Rescue Association. Protecting the Digital Sanctuary.
-            </p>
-</div>
+<footer class="w-full rounded-t-[2rem] mt-20 bg-primary-container">
+<div class="flex flex-col items-center px-12 py-16 max-w-7xl mx-auto">
+  <div class="font-serif text-xl text-on-primary-container mb-2">Rehkitzrettung</div>
+  <p class="font-sans text-on-primary-container text-sm leading-relaxed mb-4">© 2024 Rehkitzrettung Association. Protecting nature's heartbeat.</p>
+  <div class="flex space-x-8">
+    <a class="text-on-primary-container hover:underline decoration-emerald-500 underline-offset-4 transition-all" href="Landwirte.html">Landwirte</a>
+    <a class="text-on-primary-container hover:underline decoration-emerald-500 underline-offset-4 transition-all" href="#">Impressum</a>
+    <a class="text-on-primary-container hover:underline decoration-emerald-500 underline-offset-4 transition-all" href="#">Datenschutzerklärung</a>
+  </div>
 </div>
 </footer>
 </body></html>
