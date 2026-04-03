@@ -84,11 +84,13 @@
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-stone-50/70 backdrop-blur-md shadow-sm">
 <div class="flex items-center w-full px-8 py-4 max-w-7xl mx-auto">
-  <a href="index.html" class="font-serif italic text-2xl text-emerald-900">Rehkitzrettung</a>
+  <a href="index.html" class="flex items-center gap-3">
+    <img src="images/logo_rehkitzrettung.png" alt="Rehkitzrettung Logo" style="height:165px;width:auto;max-width:450px;object-fit:contain;margin-bottom:-60px;" />
+  </a>
   <div class="flex-1 flex justify-end">
     <div class="flex items-center space-x-8">
       <a class="bg-primary text-on-primary px-8 py-2.5 rounded-full font-bold tracking-tight hover:bg-primary-container transition-all active:scale-95" href="Landwirte.html">Landwirte</a>
-      <button class="hidden md:inline-flex bg-primary text-on-primary px-8 py-2.5 rounded-full font-bold tracking-tight hover:bg-primary-container transition-all active:scale-95">Donate</button>
+      <a href="index.html#goennermitgliedschaft" class="hidden md:inline-flex bg-primary text-on-primary px-8 py-2.5 rounded-full font-bold tracking-tight hover:bg-primary-container transition-all active:scale-95">Donate</a>
     </div>
   </div>
 </div>
@@ -110,7 +112,7 @@
                 </p>
 </div>
 <div class="relative h-[400px] rounded-xl overflow-hidden shadow-2xl">
-<img alt="Rehkitz im Gras" class="w-full h-full object-cover" src="https://img.oastatic.com/img2/66404780/420x237r/variant.webp"/>
+<img alt="Rehkitzrettung im Einsatz" class="w-full h-full object-cover" src="images/rettung_3.jpeg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
 </div>
 </div>
@@ -124,28 +126,28 @@
 <span class="material-symbols-outlined text-3xl text-primary">edit_document</span>
 </div>
 <h4 class="font-headline text-lg font-bold mb-3">1. Online Anmelden</h4>
-<p class="text-on-surface-variant text-sm leading-relaxed">Sie melden uns Ihre Flächen mindestens 24h vor dem geplanten Mähtermin.</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Sie melden uns Ihre Flächen mindestens 24h vor dem geplanten Mähtermin.<br><span style="color:#384e31;font-weight:bold">bis spätestens 17:00 Uhr</span></p>
 </div>
 <div class="text-center group">
 <div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-3xl text-primary">phone_in_talk</span>
 </div>
 <h4 class="font-headline text-lg font-bold mb-3">2. Bestätigung</h4>
-<p class="text-on-surface-variant text-sm leading-relaxed">Nach Ihrer Anmeldung erfolgt ein telefonischer Rückruf, um alle Details und den Termin final zu bestätigen.</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Nach ihrer Anmeldung erhalten sie eine Bestätigung.</p>
 </div>
 <div class="text-center group">
 <div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-3xl text-primary">precision_manufacturing</span>
 </div>
 <h4 class="font-headline text-lg font-bold mb-3">3. Drohnensuche</h4>
-<p class="text-on-surface-variant text-sm leading-relaxed">Unser Team überfliegt am frühen Morgen die Wiese mit einer Wärmebildkamera.</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Das Rehkitz Team überfliegt am frühen Morgen bzw. in der Nacht die Wiese mit einer Wärmebildkamera.</p>
 </div>
 <div class="text-center group">
 <div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-3xl text-primary">grass</span>
 </div>
 <h4 class="font-headline text-lg font-bold mb-3">4. Sicheres Mähen</h4>
-<p class="text-on-surface-variant text-sm leading-relaxed">Kitze werden sicher gesichert, Sie können ohne Sorge mit dem Mähen beginnen.</p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Kitze werden gesichert. Nun können Sie mit dem Mähen beginnen. <span style="color:#384e31;font-weight:bold">Achten Sie darauf, dass Sie möglichst frühzeitig mähen.</span> Danach werden die Kitze wieder freigelassen.</p>
 </div>
 </div>
 </section>
@@ -184,54 +186,38 @@
 <p class="text-on-surface-variant text-sm">Wo befindet sich die zu mähende Fläche?</p>
 </div>
 <div class="flex flex-col gap-2">
-<label class="font-label text-sm font-semibold text-on-surface-variant">Ort des Mähens (Adresse oder Schlagbezeichnung)</label>
-<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. Gemarkung Sonnental, Schlag 4" type="text" name="ort" required />
+<label class="font-label text-sm font-semibold text-on-surface-variant">Parzellennummer (möglichst genau)</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. 1234" type="text" name="ort" required />
+<a href="https://map.geo.tg.ch/apps/mf-geoadmin3/?topic=grundbuchvermessung&bgLayer=basemap_farbig&lang=de&layers=av_wms_mbsf,grundbuch,av_wms_osbp,av_wms_osnr,av_wms_cppt,av_wms_lcobj,av_wms_sosfc,av_wms_soli&layers_opacity=0.9,1,0.9,0.9,0.9,0.9,0.9,0.9&E=2736965.89&N=1261075.68&zoom=6" target="_blank" rel="noopener noreferrer" class="inline-block mt-2 px-4 py-2 bg-primary text-white font-bold rounded hover:bg-primary-container transition-all text-base" style="max-width:50%;width:100%;text-align:center;">Parzelle suchen (ThurGIS)</a>
+<label class="font-label text-sm font-semibold text-on-surface-variant mt-4">Flächengröße (in ha)</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. 4.5" type="number" name="flaeche" step="0.1" required />
 </div>
 </div>
 <!-- Step 3: Scheduling -->
 <div class="grid grid-cols-1 gap-8 pt-8">
 <div class="border-b border-outline-variant/30 pb-4">
 <h3 class="font-headline text-2xl font-bold text-primary mb-2">Zeitplanung</h3>
-<p class="text-on-surface-variant text-sm">Wann planen Sie zu mähen? Der Überflug mit der Drohne sollte möglichst früh am Mäh-Tag stattfinden, das Mähen kann aber auch später erfolgen.</p>
-</div>
+
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="flex flex-col gap-2">
-<label class="font-label text-sm font-semibold text-on-surface-variant">Geplantes Mähdatum</label>
-<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" type="date" name="maehdatum" required />
-</div>
-<div class="bg-primary-container/10 p-4 rounded-xl flex items-start gap-3 border border-primary/10">
-<span class="material-symbols-outlined text-primary mt-1">light_mode</span>
-<p class="text-sm text-primary leading-snug">
-<strong>Hinweis:</strong> Bitte wählen Sie die gewünschte Uhrzeit für den Drohnenflug am Mäh-Tag. Das Mähen kann im Anschluss flexibel erfolgen.
-                                </p>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
   <div class="flex flex-col gap-2">
-    <label class="font-label text-sm font-semibold text-on-surface-variant">Geplante Uhrzeit für das Mähen</label>
-    <input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" type="time" name="maehzeit" required />
+    <label class="font-label text-sm font-semibold text-on-surface-variant">Geplantes Mähdatum</label>
+    <input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" type="date" name="maehdatum" required />
   </div>
 </div>
-</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4"></div>
 <!-- Step 4: Finalize -->
-<div class="grid grid-cols-1 gap-8 pt-8">
-<div>
-<h3 class="font-headline text-2xl font-bold text-primary mb-2">Abschluss</h3>
-</div>
-<div class="flex flex-col gap-2">
-<label class="font-label text-sm font-semibold text-on-surface-variant">Flächengröße (optional in ha)</label>
-<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. 4.5" type="number" name="flaeche" step="0.1" />
-</div>
 <div class="pt-8">
-<button class="w-full bg-primary text-on-primary py-5 rounded-full font-headline text-xl font-bold shadow-xl hover:bg-primary-container transition-all flex items-center justify-center gap-3">
-                                Anfrage senden
-                                <span class="material-symbols-outlined">send</span>
-</button>
-<div class="flex items-center justify-center gap-2 mt-6 text-on-surface-variant/60">
-<span class="material-symbols-outlined text-sm">lock</span>
-<span class="text-xs">Ihre Daten werden vertraulich behandelt und nur zur Koordination genutzt.</span>
-</div>
-</div>
+  <div class="mb-6 p-4 bg-primary-container/10 border-l-4 border-primary text-primary font-bold rounded">
+    Bitte mähen Sie nach dem Drohneneinsatz zeitnah, damit die Rehkitze wieder freigelassen werden können!
+  </div>
+  <button class="w-full bg-primary text-on-primary py-5 rounded-full font-headline text-xl font-bold shadow-xl hover:bg-primary-container transition-all flex items-center justify-center gap-3" type="submit">
+    Anfrage senden
+    <span class="material-symbols-outlined">send</span>
+  </button>
+  <div class="flex items-center justify-center gap-2 mt-6 text-on-surface-variant/60">
+    <span class="material-symbols-outlined text-sm">lock</span>
+    <span class="text-xs">Ihre Daten werden vertraulich behandelt und nur zur Koordination genutzt.</span>
+  </div>
 </div>
 </form>
 </div>
@@ -241,8 +227,7 @@
 <!-- Footer -->
 <footer class="w-full rounded-t-[2rem] mt-20 bg-primary-container">
 <div class="flex flex-col items-center px-12 py-16 max-w-7xl mx-auto">
-  <div class="font-serif text-xl text-on-primary-container mb-2">Rehkitzrettung</div>
-  <p class="font-sans text-on-primary-container text-sm leading-relaxed mb-4">© 2024 Rehkitzrettung Association. Protecting nature's heartbeat.</p>
+  <div class="font-serif text-xl text-on-primary-container mb-2">Rehkitzrettung-Bischofszell-Hauptwil-Gottshaus</div>
   <div class="flex space-x-8">
     <a class="text-on-primary-container hover:underline decoration-emerald-500 underline-offset-4 transition-all" href="Landwirte.html">Landwirte</a>
     <a class="text-on-primary-container hover:underline decoration-emerald-500 underline-offset-4 transition-all" href="#">Impressum</a>
