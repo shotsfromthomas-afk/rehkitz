@@ -83,9 +83,9 @@
 <body class="bg-surface text-on-surface font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-stone-50/70 backdrop-blur-md shadow-sm">
-<div class="flex items-center w-full px-8 py-0 max-w-7xl mx-auto" style="min-height:56px;">
+<div class="flex items-center w-full px-8 py-0 max-w-7xl mx-auto" style="min-height:140px;">
   <a href="index.html" class="flex items-center gap-3">
-    <img src="images/logo_rehkitzrettung.png" alt="Rehkitzrettung Logo" style="height:165px;width:auto;max-width:450px;object-fit:contain;margin-bottom:-60px;margin-top:24px;" />
+    <img src="images/logo_rehkitzrettung.png" alt="Rehkitzrettung Logo" style="height:132px;width:auto;max-width:520px;object-fit:contain;" />
   </a>
   <div class="flex-1 flex justify-end">
     <div class="flex items-center space-x-8">
@@ -98,7 +98,7 @@
 <!-- Mobile Navigation -->
 </div>
 </nav>
-<main class="pt-24">
+<main class="pt-40">
 <!-- Hero Section -->
 <section class="max-w-7xl mx-auto px-8 pt-20 pb-12">
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -126,7 +126,7 @@
 <span class="material-symbols-outlined text-3xl text-primary">edit_document</span>
 </div>
 <h4 class="font-headline text-lg font-bold mb-3">1. Online Anmelden</h4>
-<p class="text-on-surface-variant text-sm leading-relaxed">Sie melden uns Ihre Flächen mindestens 24h vor dem geplanten Mähtermin.<br><span style="color:#384e31;font-weight:bold">bis spätestens 17:00 Uhr</span></p>
+<p class="text-on-surface-variant text-sm leading-relaxed">Sie melden uns Ihre Flächen nach vorgängiger Absprache mit dem Jagdaufseher <span style="color:#384e31;font-weight:bold">bis spätestens 17:00 Uhr am Vorabend</span> vor dem geplanten Mähtermin.</p>
 </div>
 <div class="text-center group">
 <div class="w-20 h-20 bg-surface-container rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-fixed transition-colors">
@@ -157,7 +157,7 @@
 <div class="bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-sm border border-outline-variant/10">
 <!-- Progress Indicator -->
 
-<form name="contact" method="POST" action="/Bestätigung.html" netlify="true" netlify-honeypot="bot-field" class="space-y-12">
+<form name="contact" method="POST" action="/Bestätigung.html" netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" class="space-y-12">
   <input type="hidden" name="bot-field" />
   <input type="hidden" name="form-name" value="contact" />
 <!-- Step 1: Contact -->
@@ -191,6 +191,9 @@
 <a href="https://map.geo.tg.ch/apps/mf-geoadmin3/?topic=grundbuchvermessung&bgLayer=basemap_farbig&lang=de&layers=av_wms_mbsf,grundbuch,av_wms_osbp,av_wms_osnr,av_wms_cppt,av_wms_lcobj,av_wms_sosfc,av_wms_soli&layers_opacity=0.9,1,0.9,0.9,0.9,0.9,0.9,0.9&E=2736965.89&N=1261075.68&zoom=6" target="_blank" rel="noopener noreferrer" class="inline-block mt-2 px-4 py-2 bg-primary text-white font-bold rounded hover:bg-primary-container transition-all text-base" style="max-width:50%;width:100%;text-align:center;">Parzelle suchen (ThurGIS)</a>
 <label class="font-label text-sm font-semibold text-on-surface-variant mt-4">Flächengröße (in ha)</label>
 <input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" placeholder="z.B. 4.5" type="number" name="flaeche" step="0.1" required />
+
+<label class="font-label text-sm font-semibold text-on-surface-variant mt-4">Bild der Fläche (optional)</label>
+<input class="bg-surface-container-lowest border-none border-b-2 border-outline-variant focus:border-primary focus:ring-0 transition-colors py-3 px-0" type="file" name="flaeche_bild" accept="image/*" />
 </div>
 </div>
 <!-- Step 3: Scheduling -->
